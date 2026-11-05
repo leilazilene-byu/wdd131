@@ -1,0 +1,31 @@
+@media screen and (min-width: 32rem) {
+    #menuButton {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        flex: 1;
+    }
+
+    #menu a {
+        padding: 0.25rem 0.5rem;
+    
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: space-evenly;
+    }
+
+    #cartoes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    header {
+    padding: 0.5rem;
+}
+}
+ 
