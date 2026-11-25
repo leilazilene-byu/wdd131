@@ -1,0 +1,206 @@
+
+/* Esquema de cores */
+:root {
+    --vinho: #722f37;
+    --dourado: #c9a84c;
+    --creme: #faf6f0;
+    --preto: #1a1a1a;
+    --branco: #ffffff;
+}
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--creme);
+    color: var(--preto);
+    line-height: 1.8;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--vinho);
+    color: var(--branco);
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid var(--dourado);
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+}
+
+.slogan {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    color: var(--branco);
+    margin: 10px 0;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: var(--branco);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 5px solid var(--dourado);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--vinho);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--dourado);
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--vinho);
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Paleta de cores */
+.paleta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.cor {
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid var(--dourado);
+    border-radius: 8px;
+}
+
+.cor h3 {
+    color: inherit;
+}
+
+.vinho {
+    background-color: var(--vinho);
+    color: var(--branco);
+}
+
+.dourado {
+    background-color: var(--dourado);
+    color: var(--preto);
+}
+
+.creme {
+    background-color: var(--creme);
+    color: var(--preto);
+}
+
+.preto {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.branco {
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+/* Tipografia */
+.fonte-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+}
+
+.fonte-texto {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.fonte-decorativa {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+}
+
+/* Wireframes */
+.wireframes {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--dourado);
+    border-radius: 8px;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+    text-align: center;
+    padding: 25px;
+    border-top: 5px solid var(--dourado);
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .slogan {
+        font-size: 1.6rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .wireframes {
+        grid-template-columns: 1fr;
+    }
+}
