@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de avaliação de produtos para a atividade WDD 131.">
+    <meta name="author" content="Leila Zilene">
+    <title>Avaliação de Produto</title>
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <script src="scripts/formulario.js" defer></script>
+    <script src="scripts/obterdatas.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Avaliação do Produto</h1>
+    </header>
+    <main>
+        <form method="get" action="avaliacao.html">
+            <label for="produto">Nome do Produto</label>
+            <select id="produto" name="produto" required>
+                <option value="" disabled selected>Selecione um Produto...</option>
+            </select>
+            <fieldset class="grupo-classificacao">
+                <legend>Classificação Geral</legend>
+                <div class="classificacao">
+                    <div class="opcao">
+                        <input type="radio" id="estrela1" name="classificacao" value="1" required>
+                        <label for="estrela1">☆</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="estrela2" name="classificacao" value="2" required>
+                        <label for="estrela2">☆☆</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="estrela3" name="classificacao" value="3" required>
+                        <label for="estrela3">☆☆☆</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="estrela4" name="classificacao" value="4" required>
+                        <label for="estrela4">☆☆☆☆</label>
+                    </div>
+                    <div class="opcao">
+                        <input type="radio" id="estrela5" name="classificacao" value="5" required>
+                        <label for="estrela5">☆☆☆☆☆</label>
+                    </div>
+                </div>
+            </fieldset>
+            <label for="data-instalacao">Data de Instalação</label>
+            <input type="date" id="data-instalacao" name="data-instalacao" required>
+            <fieldset>
+                <legend>Recursos Úteis</legend>
+                <div class="opcao">
+                    <input type="checkbox" id="durabilidade" name="recursos" value="durabilidade">
+                    <label for="durabilidade">Durabilidade</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="facilidade" name="recursos" value="facilidade">
+                    <label for="facilidade">Facilidade de Uso</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="desempenho" name="recursos" value="desempenho">
+                    <label for="desempenho">Desempenho</label>
+                </div>
+                <div class="opcao">
+                    <input type="checkbox" id="design" name="recursos" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+            <label for="avaliacao-escrita">Avaliação Escrita (Opcional)</label>
+            <textarea id="avaliacao-escrita" name="avaliacao-escrita"></textarea>
+            <label for="nome-usuario">Seu Nome (Opcional)</label>
+            <input type="text" id="nome-usuario" name="nome-usuario">
+            <input type="submit" value="Publicar Avaliação">
+        </form>    
+    </main>
+    <footer>
+        <p>©<span id="anoatual"></span> ❖ Leila Zilene ❖ Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+</body>
+</html>
